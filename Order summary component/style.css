@@ -2,20 +2,21 @@
 body {
     font-family: 'Red+Hat+Display';
     font-weight: 500;
+
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
 }
 
 p {
     font-size: 16px;
 }
 
-@media screen and (min-width: 375px){
-   body{
-       background-image: url("images/pattern-background-mobile.svg");
-   }
-}
-
-@media screen and (min-width: 1440px){
-    body {
-        background-image: url("images/pattern-background-desktop.svg");
-    }
+@media screen and (max-width: 375px){
+   body {
+    background-image: url("images/pattern-background-mobile.svg");
+   } 
 }
