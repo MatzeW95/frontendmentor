@@ -15,6 +15,17 @@ p {
     font-size: 16px;
 }
 
+#div-container {
+    border: 1px solid black;
+    width: 40%;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 375px){
    body {
     background-image: url("images/pattern-background-mobile.svg");
