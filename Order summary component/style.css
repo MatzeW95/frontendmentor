@@ -16,14 +16,70 @@ p {
 }
 
 #div-container {
-    border: 1px solid black;
-    width: 40%;
+    width: 25%;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 25px;
+}
+
+#container-img {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+#payment-headline {
+    text-align: center;
+}
+
+#payment-text {
+    text-align: center;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#div-paymentplan {
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+#img-music {
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+    width: 40px;
+}
+
+#div-annualplan {
+    margin-top: 5px;
+    float: left;
+    width: 100px;
+}
+
+#div-change {
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+#btn-payment {
+    text-align: center;
+    margin:0 auto;
+    display:block;
+}
+
+#div-cancel {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 375px){
