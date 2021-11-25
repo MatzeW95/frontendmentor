@@ -88,8 +88,9 @@ body {
     width: 20%;
 }
 
-#btn-change:active {
+#btn-change:active, #btn-change:hover {
     text-decoration: none;
+    color: hsl(224, 23%, 55%);
 }
 
 #btn-payment {
@@ -110,7 +111,7 @@ body {
     cursor: pointer;
 }
 
-#btn-payment:active {
+#btn-payment:active, #btn-payment:hover {
     background-color: hsl(224, 23%, 55%);
 }
 
@@ -125,9 +126,10 @@ body {
     color: hsl(224, 23%, 55%);
     font-size: 0.7em;
     font-weight: 700;
+    width: fit-content;
 }
 
-#btn-cancel:active {
+#btn-cancel:active, #btn-cancel:hover {
     color: black;
 }
 
