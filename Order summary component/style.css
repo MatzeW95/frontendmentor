@@ -1,7 +1,10 @@
-@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 body {
-    font-family: "Red+Hat+Display", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
+    font-size: 1em;
+    color: hsl(224, 23%, 55%);
 
     min-height: 100vh;
     background-image: url("images/pattern-background-desktop.svg");
@@ -9,10 +12,6 @@ body {
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
     position: relative;
-}
-
-p {
-    font-size: 16px;
 }
 
 #div-container {
@@ -24,67 +23,120 @@ p {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 #container-img {
     width: 100%;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 #payment-headline {
+    font-size: 1.3em;
+    color: hsl(223, 47%, 23%);
     text-align: center;
     font-weight: 900;
+    margin-top: 20px;
 }
 
 #payment-text {
+    font-size: 0.8em;
     text-align: center;
     margin-left: 45px;
     margin-right: 45px;
+    line-height: 1.5;
 }
 
 #div-paymentplan {
     border-radius: 10px;
-    border: 1px solid black;
-    text-align: center;
+    background-color: hsl(225, 100%, 98%);
     width: 80%;
     margin: auto;
-    height: 50px;
+    height: 80px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#div-img-music-group {
+    width: 25%;
 }
 
 #img-music {
-    margin-top: 5px;
-    margin-left: 20px;
-    float: left;
+    height: 40px;
     width: 40px;
+    margin-left: 20px;
 }
 
-#div-annualplan {
-    margin-top: 5px;
+#div-annualplan-group {
+    width: 55%;
     float: left;
-    width: 100px;
 }
 
-#div-change {
-    margin-top: 15px;
-    margin-right: 20px;
-    float: right;
+#div-annualplan-headline {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+#div-annualplan-text {
+    font-size: 0.9em;
+}
+
+#btn-change {
+    font-size: 0.7em;
+    width: 20%;
+}
+
+#btn-change:active {
+    text-decoration: none;
 }
 
 #btn-payment {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
     text-align: center;
-    margin:0 auto;
-    display:block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#div-cancel {
+#btn-payment:active {
+    background-color: hsl(224, 23%, 55%);
+}
+
+#btn-cancel {
     text-align: center;
     margin-bottom: 25px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+#btn-cancel:active {
+    color: black;
 }
 
 @media screen and (max-width: 375px){
    body {
     background-image: url("images/pattern-background-mobile.svg");
    } 
+
+   #div-container {
+       width: 90%;
+   }
 }
