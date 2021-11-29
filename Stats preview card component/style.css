@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+    body {
+        height: 100vh;
+        margin: 0px;
+        position: relative;
+        background-color: hsl(233, 47%, 7%);
+    }
+    
+    #div-main-container {
+        width: 80%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+#div-main-left {
+    background-color: hsl(244, 38%, 16%);
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#div-color-highlighting {
+    color: hsl(277, 64%, 61%);
+    display: inline;
+}
+
+#div-main-headline {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    padding-left: 60px;
+    padding-right: 120px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#div-main-text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding-left: 60px;
+    padding-right: 160px;
+    margin-bottom: 70px;
+}
+
+#div-flexbox {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 180px;
+    margin-bottom: 70px;
+}
+
+#div-box1, #div-box2, #div-box3 {
+    font-size: 1.5em;
+}
+
+#div-box2 {
+    margin: auto;
+}
+
+#div-stats-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#div-main-right {
+    width: 50%;
+    background: linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
