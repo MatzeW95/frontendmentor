@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-#div-color-highlighting {
+span {
     color: hsl(277, 64%, 61%);
-    display: inline;
 }
 
 #div-main-headline {
