@@ -8,21 +8,11 @@ body {
 }
 
 #div-main-container {
-    width: 60%;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     display: flex;
 }
 
 #div-container1 {
     background-color: hsl(31, 77%, 52%);
-    
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 #div-container2 {
@@ -31,15 +21,6 @@ body {
 
 #div-container3 {
     background-color: hsl(179, 100%, 13%);
-    
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.div-container {
-    padding: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .headline {
@@ -55,7 +36,6 @@ body {
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 0.9em;
     line-height: 1.6;
-    margin-bottom: 100px;
 }
 
 .button-learn-more {
@@ -97,4 +77,80 @@ body {
 #button-lm3:hover {
     background-color: hsl(179, 100%, 13%);
     color:hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 376px){
+
+    .main-text {
+        margin-bottom: 100px;
+    }
+
+    .div-container {
+        padding: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #div-main-container {
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #div-container1 {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    #div-container3 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #div-main-container {
+        width: 83%;
+        margin: auto;
+        flex-flow: column;
+    }
+
+    #div-container1 {
+        order: 1;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #div-container2 {
+        order: 2;
+    }
+
+    #div-container3 {
+        order: 3;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .div-container {
+        padding: 50px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .main-text {
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+
+    .headline {
+        font-size: 2.5em;
+    }
 }
