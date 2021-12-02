@@ -61,3 +61,13 @@ ul {
 #div-pricing > span {
     color: rgb(0, 195, 192);
 }
+
+#main-headline,
+.subheadline,
+#paragraph1,
+#div-pricing,
+#paragraph2,
+#button-signup
+{
+    margin-left: 40px;
+}
