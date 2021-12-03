@@ -18,36 +18,15 @@ ul {
 }
 
 #div-main-container {
-    width: 51%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     background-color: white;
-    border-radius: 10px;
-}
-
-#div-container1 {
-    padding: 30px 40px;
 }
 
 #div-container2 {
     background-color: rgb(0, 184, 180);
-    width: 50%;
-    border-bottom-left-radius: 10px;
-    padding: 30px 40px;
 }
 
 #div-container3 {
     background-color: rgb(0, 195, 192);
-    width: 50%;
-    border-bottom-right-radius: 10px;
-    padding: 30px 40px;
-}
-
-#div-sub-container {
-    display: flex;
 }
 
 .subheadline {
@@ -64,26 +43,23 @@ ul {
 
 #paragraph1 {
     color: hsl(218, 22%, 67%);
-    line-height: 1.6;
-    font-size: 1.225rem;
 }
 
 #div-pricing {
     font-weight: 700;
     font-size: 2rem;
-    font-weight: 400;
 }
 
 #div-pricing > span {
     color: rgb(67, 230, 231);
     font-size: 1.2rem;
+    font-weight: 400;
 
     display: inline-block;
     vertical-align: middle;
 }
 
 #paragraph2 {
-    margin-bottom: 30px;
     font-size: 1.1rem;
 }
 
@@ -93,9 +69,93 @@ ul {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.1rem;
-    padding-top: 17px;
-    padding-bottom: 17px;
     display: inline-block;
     width: 100%;
     text-align: center;
+}
+
+@media screen and (min-width: 376px){
+
+    #div-main-container {
+        width: 51%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+
+    #div-container1 {
+        padding: 30px 40px;
+    }
+
+    #div-container2 {
+       width: 50%;
+       padding: 30px 40px;
+       border-bottom-left-radius: 10px;
+    }
+
+    #div-container3 {
+        width: 50%;
+        padding: 30px 40px;
+        border-bottom-right-radius: 10px;
+     }
+
+    #div-sub-container {
+        display: flex;
+    }
+
+    #paragraph1 {
+        font-size: 1.225rem;
+        line-height: 1.6;
+    }
+
+    #paragraph2 {
+        margin-bottom: 30px;
+    }
+
+    #button-signup {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    } 
+}
+
+@media screen and (max-width: 375px){
+    #div-main-container {
+        width: 90%;
+        margin: 5%;
+        border-radius: 5px;
+    }
+
+    #div-container1, #div-container2, #div-container3 {
+        padding: 20px 20px;
+    }
+
+    #div-container3 {
+        border-bottom-left-radius: 5px; 
+        border-bottom-right-radius: 5px;
+     }
+
+     #main-headline {
+         font-size: 1.5rem;
+     }
+
+     .subheadline {
+         font-size: 1.2rem;
+     }
+
+     #paragraph1 {
+        font-size: 0.95rem;
+        line-height: 2;
+    }
+
+    #paragraph2 {
+        margin-bottom: 30px;
+    }
+
+    #button-signup {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
