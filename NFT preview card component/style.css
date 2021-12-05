@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+
+#div-main-container {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+#img-main {
+    width: 100%;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+#div-auction-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#div-price {        
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+#div-time {
+    font-weight: 400;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+#div-author-container {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#img-avatar {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#div-author > span {
+    color: white;
+}
+
+@media screen and (min-width: 376px) {
+    
+    #div-main-container {
+        width: 20%;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    #p-description {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+
+    #div-auction-container {
+        font-size: 0.9rem;
+    }
+
+    #img-eth, #img-time {
+        margin-right: 5px;
+    } 
+
+    #img-avatar {
+        width: 27px;
+    }
+
+    #div-author {
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (max-width: 375px) {
+    
+}
