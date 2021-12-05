@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open+Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+
+#div-flex-container {
+    display: flex;
+}
+
+#img-left {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#a-register {
+    font-family: "Poppins", sans-serif;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background-image: url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+    #div-main-container {
+        width: 90%;
+        margin: 3% 5% 0px;
+    }
+
+    #img-icon {
+        margin-bottom: 80px;
+    }
+
+    h1{
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    #a-register {
+        font-size: 1.1rem;
+        padding: 13px 60px;
+        border-radius: 50px;
+    }
+
+    #a-register:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+
+    #div-socials {
+        padding-right: 3rem;
+    }
+
+    ion-icon {
+        font-size: 35px;
+        float: right;
+        margin: 0px 10px;
+    }
+
+    #div-content-container {
+        padding: 3rem;
+    }
+
+    #div-container1 {
+        width: 55%;
+    }
+
+    #div-container2 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+        background-repeat: no-repeat;
+    } 
+}

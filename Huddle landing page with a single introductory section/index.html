@@ -5,29 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <main>
+    <div id="div-main-container">
+      <img id="img-icon" src="./images/logo.svg">
+      <div id="div-flex-container">
+        <div id="div-container1">
+          <img id="img-left" src="./images/illustration-mockups.svg">
+        </div>
+        <div id="div-container2">
+          <div id="div-content-container">
+            <h1>
+              Build The Community Your Fans Will Love
+            </h1>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
+            </p>
+            <a id="a-register" href="">
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="div-socials">
+        <ion-icon name="logo-facebook" alt="facebook"></ion-icon>
+        <ion-icon name="logo-twitter" alt="twitter"></ion-icon>
+        <ion-icon name="logo-instagram" alt="instagram"></ion-icon>
+      </div>
+      <!--
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
+      -->
+    </div>
+  </main>
 </body>
 </html>
