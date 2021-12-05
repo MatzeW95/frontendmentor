@@ -70,12 +70,25 @@ h1 {
 
     #div-socials {
         padding-right: 3rem;
+        display: flex;
+        float: right;
     }
 
     ion-icon {
         font-size: 35px;
-        float: right;
         margin: 0px 10px;
+    }
+
+    #icon-facebook {
+        order: 1;
+    }
+
+    #icon-twitter {
+        order: 2;
+    }
+
+    #icon-instagram {
+        order: 3;
     }
 
     #div-content-container {
