@@ -11,27 +11,9 @@ body {
     font-weight: 400;
 }
 
-#img-background1 {
-    position: absolute;
-    top: -500px;
-    left: -275px;
-}
-
-#img-background2 {
-    position: absolute;
-    top: 400px;
-    left: 700px;
-}
-
 #div-main-container {
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: white;
     border-radius: 10px;
+    z-index: 2;
 }
 
 #img-header {
@@ -43,27 +25,18 @@ body {
 #img-profile {
     border-radius: 50%;
     border: 5px solid white;
-    position: absolute;
-    left: 127px;
-    top: 90px;
 }
 
 h1 {
-    margin-top: 60px;
-    margin-bottom: 0px;
-    font-size: 1.2rem;
     color: hsl(229, 23%, 23%);
     font-weight: 700;
+    margin: 60px 0px 0px;
+    font-size: 1.2rem;
 }
 
 span {
     color: hsl(227, 10%, 46%); 
     font-weight: 400;
-}
-
-#p-city {
-    font-size: 0.9rem;
-    margin: 10px 0px 25px;
 }
 
 #div-statistic-container {
@@ -74,16 +47,94 @@ span {
 }
 
 .div-container {
-    margin: 10px 5px 0px 5px;
-    padding: 15px;
     font-weight: 700;
     color: hsl(229, 23%, 23%);
+    margin: 10px 5px 0px 5px;
+    padding: 15px;
 }
 
 .div-container > p {
-    margin: 5px 0px 10px 0px;
     color: hsl(227, 10%, 46%);
     font-weight: 400;
+    margin: 5px 0px 10px 0px;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 376px) {
+
+    #img-background1 {
+        position: absolute;
+        top: -500px;
+        left: -275px;
+        z-index: 1;
+    }
+    
+    #img-background2 {
+        position: absolute;
+        top: 400px;
+        left: 700px;
+        z-index: 1;
+    }
+
+    #div-main-container {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
+
+    #img-profile {
+        position: absolute;
+        left: 127px;
+        top: 90px;
+    }
+
+    #p-city {
+        margin: 10px 0px 25px;
+        font-size: 0.9rem;
+    }
+
+    .div-container {
+        margin: 10px 5px 0px 5px;
+        padding: 15px;
+    }
+
+    .div-container > p {
+        margin: 5px 0px 10px 0px;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #img-background1 {
+        position: absolute;
+        top: -650px;
+        left: -750px;
+        z-index: 1;
+    }
+    
+    #img-background2 {
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        z-index: 1;
+    }
+
+    #div-main-container {
+        width: 90%;
+        margin: 150px 5% 0px;
+        position: absolute;
+        background-color: white;
+    }
+
+    #img-profile {
+        position: absolute;
+        left: 115px;
+        top: 80px;
+    }
 }
