@@ -74,7 +74,7 @@ ul {
     text-align: center;
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 1000px){
 
     #div-main-container {
         width: 51%;
@@ -121,7 +121,7 @@ ul {
     } 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 375px){
     #div-main-container {
         width: 90%;
         margin: 5%;

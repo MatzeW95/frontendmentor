@@ -61,7 +61,7 @@ span {
     letter-spacing: 0.1rem;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1000px) {
 
     #img-background1 {
         position: absolute;
@@ -110,7 +110,7 @@ span {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     #img-background1 {
         position: absolute;
         top: -650px;

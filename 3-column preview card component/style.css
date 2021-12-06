@@ -79,7 +79,7 @@ body {
     color:hsl(0, 0%, 95%);
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 1000px){
 
     .main-text {
         margin-bottom: 100px;
@@ -110,7 +110,7 @@ body {
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 375px){
 
     body {
         padding-top: 20px;
