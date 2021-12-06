@@ -133,7 +133,7 @@ body {
     color: black;
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 899px){
    body {
     background-image: url("images/pattern-background-mobile.svg");
    } 

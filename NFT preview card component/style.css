@@ -100,7 +100,7 @@ h1:hover, #div-author > span:hover {
     opacity: 1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
     
     #div-main-container {
         width: 20%;
@@ -138,7 +138,7 @@ h1:hover, #div-author > span:hover {
     }    
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 899px) {
    
     #div-main-container {
         width: 80%;

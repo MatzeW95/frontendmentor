@@ -37,7 +37,7 @@ h1 {
     color: white;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
     body {
         background-image: url("./images/bg-desktop.svg");
         background-repeat: no-repeat;
@@ -104,7 +104,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 899px) {
     body {
         background-image: url("./images/bg-mobile.svg");
         background-repeat: no-repeat;
