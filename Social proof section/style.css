@@ -12,6 +12,31 @@ body {
     height: 100vh;
 }
 
+#div-main-container {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+#div-top-flexcontainer {
+    display: flex;
+}
+
+#div-top-left-flexcontainer, #div-top-right-flexcontainer {
+    width: 50%;
+}
+
+.div-rating {
+    display: flex;
+}
+
+#div-bottom-flexcontainer {
+    display: flex;
+}
+
+.div-personal {
+    display: flex;
+}
+
 @media screen and (min-width: 900px) {
     body {
         background-image:   url(./images/bg-pattern-top-desktop.svg),
