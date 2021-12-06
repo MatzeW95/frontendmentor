@@ -4,43 +4,79 @@ body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     font-weight: 400;
+    color: hsl(300, 24%, 96%);
     margin: 0px;
     padding: 0px;
 
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
     height: 100vh;
-}
 
-#div-main-container {
-    width: 80%;
-    margin: 0px 10%;
+    
+    color: 
+    hsl(300, 43%, 22%)
+    hsl(333, 80%, 67%)
+
+    hsl(303, 10%, 53%)
+    hsl(300, 24%, 96%)
+    White: hsl(0, 0%, 100%)
+    */
 }
 
 #div-top-flexcontainer {
     display: flex;
 }
 
-#div-top-left-flexcontainer, #div-top-right-flexcontainer {
-    width: 50%;
+h1 {
+    color: hsl(300, 43%, 22%);
+}
+
+p {
+    color: hsl(303, 10%, 53%);
 }
 
 .div-rating {
     display: flex;
 }
 
+.div-rating-text {
+    color: hsl(300, 43%, 22%);
+}
+
 #div-bottom-flexcontainer {
     display: flex;
+}
+
+.div-review {
+    background-color: hsl(300, 43%, 22%);
 }
 
 .div-personal {
     display: flex;
 }
 
+.div-personal-name{
+    color: white;
+}
+
+.div-personal-status {
+   color: hsl(333, 80%, 67%); 
+}
+
 @media screen and (min-width: 900px) {
     body {
         background-image:   url(./images/bg-pattern-top-desktop.svg),
                             url(./images/bg-pattern-bottom-desktop.svg);
+    }
+
+    #div-main-container {
+        width: 80%;
+        margin: 5% 10% 0px;
+        border: 1px solid black;
+    }
+
+    #div-top-left-flexcontainer, #div-top-right-flexcontainer {
+        width: 50%;
     }
 }
 
