@@ -101,5 +101,39 @@ h1 {
 }
 
 @media screen and (max-width: 375px) {
-    
+   
+    #div-main-container {
+        width: 80%;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #p-description {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+
+    #div-auction-container {
+        font-size: 0.95rem;
+    }
+
+    #img-eth, #img-time {
+        margin-right: 5px;
+    } 
+
+    #img-avatar {
+        width: 27px;
+    }
+
+    #div-author {
+        font-size: 0.95rem;
+    } 
 }
