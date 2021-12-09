@@ -11,16 +11,6 @@ body {
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
     height: 100vh;
-
-    
-    color: 
-    hsl(300, 43%, 22%)
-    hsl(333, 80%, 67%)
-
-    hsl(303, 10%, 53%)
-    hsl(300, 24%, 96%)
-    White: hsl(0, 0%, 100%)
-    */
 }
 
 #div-top-flexcontainer {
@@ -35,8 +25,26 @@ p {
     color: hsl(303, 10%, 53%);
 }
 
+#div-top-right-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
 .div-rating {
     display: flex;
+    background-color: hsl(300, 24%, 96%);
+    width: 70%;
+}
+
+.div-rating-flexcontainer {
+    width: fit-content;
+    display: flex;
+}
+
+.img-rating {
+    margin: 0px 4px;
 }
 
 .div-rating-text {
@@ -45,14 +53,24 @@ p {
 
 #div-bottom-flexcontainer {
     display: flex;
+    justify-content: space-between;
 }
 
 .div-review {
     background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    width: 28%;
+    padding: 3% 2%;
 }
 
 .div-personal {
     display: flex;
+}
+
+.div-personal-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .div-personal-name{
@@ -72,11 +90,90 @@ p {
     #div-main-container {
         width: 80%;
         margin: 5% 10% 0px;
-        border: 1px solid black;
     }
 
     #div-top-left-flexcontainer, #div-top-right-flexcontainer {
         width: 50%;
+    }
+
+    #div-top-flexcontainer {
+        margin-bottom: 4rem;
+    }
+
+    .div-rating {
+        padding: 1.5rem;
+        border-radius: 5px;
+    }
+
+    #div-rating1 {
+        margin-right: 5rem;
+    }
+
+    #div-rating2 {
+        margin-right: 2.5rem;
+    } 
+
+    .div-rating-text {
+        margin-left: 2rem;
+    }
+
+    #div-review1 {
+        margin-bottom: 2rem;
+    }
+    
+    #div-review2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #div-review3 {
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-right: 10rem;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        font-weight: 400;
+        padding-right: 8rem;
+        line-height: 1.6;
+    }
+
+    .div-rating-text {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .div-personal {
+        margin-bottom: 1rem;
+    }
+
+    .img-avatar {
+        width: 2.8rem;
+        border-radius: 50%;
+    }
+
+    .div-personal-name {
+        font-weight: 700;
+    }
+
+    .div-review-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .div-personal-data {
+        margin-left: 1rem;
+        line-height: 1.3;
+    }
+
+    .div-personal-data {
+        font-weight: 500;
     }
 }
 
