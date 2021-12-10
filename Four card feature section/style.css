@@ -12,8 +12,9 @@ body {
     background-color: hsl(0, 0%, 98%);
 }
 
-h2, #headline2 {
+h2, h1 {
     color: hsl(234, 12%, 34%);
+    font-weight: 600;
 }
 
 .container-card {
@@ -40,6 +41,10 @@ h2, #headline2 {
     text-align: center;
 }
 
+#headline1 {
+    font-weight: 200;
+}
+
 #container-bottom {
     display: flex;
 }
@@ -52,8 +57,17 @@ h2, #headline2 {
     }
 
     #container-top {
-        width: 45%;
+        width: 50%;
         margin: 0 auto 5%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin: 0px;
+    }
+
+    #container-top > p {
+        font-size: 1.05rem;
     }
 
     #container-bottom {
@@ -77,6 +91,7 @@ h2, #headline2 {
     }
 
     h2 {
+        font-size: 1.35rem;
         margin: 0px;
     }
 
@@ -92,5 +107,45 @@ h2, #headline2 {
 }
 
 @media screen and (max-width: 899px){
+
+    #container-main {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    #container-top > p {
+        font-size: 1rem;
+        margin-bottom: 5rem;
+    }
     
+    #container-bottom {
+        flex-direction: column;
+    }
+
+    .container-card {
+        border-radius: 4px;
+        padding: 1.5rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+
+    .container-card > p {
+        font-size: 0.87rem;
+        margin: 0.2rem 0px 2rem;
+        line-height: 1.6;
+    }
+
+    .img-card {
+        display: block;
+        margin-left: auto;
+    }
 }
