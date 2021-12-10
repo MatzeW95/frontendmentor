@@ -7,6 +7,90 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 400;
+    color: hsl(229, 6%, 66%);
 
+    background-color: hsl(0, 0%, 98%);
+}
+
+h2, #headline2 {
+    color: hsl(234, 12%, 34%);
+}
+
+.container-card {
     background-color: white;
+}
+
+#container-supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+#container-teambuilder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+#container-karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+#container-calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+#container-top {
+    text-align: center;
+}
+
+#container-bottom {
+    display: flex;
+}
+
+@media screen and (min-width: 900px){
+    
+    #container-main {
+        width: 80%;
+        margin: 4% 10%;
+    }
+
+    #container-top {
+        width: 45%;
+        margin: 0 auto 5%;
+    }
+
+    #container-bottom {
+        justify-content: space-evenly;
+    }
+
+    #container-left, #container-middle, #container-right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #container-teambuilder {
+        margin-bottom: 2rem;
+    }
+
+    .container-card {
+        border-radius: 4px;
+        padding: 2rem;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+
+    .container-card > p {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .img-card {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 899px){
+    
 }
