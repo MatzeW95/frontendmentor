@@ -10,6 +10,40 @@ body {
     color: hsl(0, 36%, 70%);
 }
 
+h1 {
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+}
+
+h1 > span {
+    color: hsl(0, 36%, 70%);
+}
+
+#input-email {
+    color: hsl(0, 6%, 24%);
+    background-image: url("./images/icon-error.svg");
+    background-size: 0 0;
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+#a-button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+#a-button:hover, #a-button:active {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+    cursor: pointer;
+}
+
+#p-error {
+    visibility: hidden;
+    color: hsl(0, 93%, 68%);
+}
+
 @media screen and (min-width: 900px) {
 
     #container-main {
@@ -33,15 +67,12 @@ body {
         margin: 8rem 0px 0px;
         font-size: 4.3rem;
         font-weight: 400;
-        text-transform: uppercase;
         letter-spacing: 1rem;
         line-height: 1.1;
-        color: hsl(0, 6%, 24%);
     }
 
     h1 > span {
         font-weight: 300;
-        color: hsl(0, 36%, 70%);
     }
 
     p {
@@ -57,25 +88,16 @@ body {
 
     #input-email {
         width: 80%;
-        color: hsl(0, 6%, 24%);
         box-sizing: border-box;
         border: 2px solid hsl(0, 36%, 70%);
         border-radius: 50px;
         font-size: 16px;
-        background-image: url("./images/icon-error.svg");
         background-position: 75% 12px; 
         background-repeat: no-repeat;
-        background-size: 0 0;
         padding: 15px 20px 15px 40px;
-        outline: none;
-    }
-
-    ::placeholder {
-        color: hsl(0, 36%, 70%);
     }
 
     #a-button {
-        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         padding: 18px 40px;
         border-radius: 50px;
         height: 16px;
@@ -84,17 +106,10 @@ body {
         display: flex;
     }
 
-    #a-button:hover, #a-button:active {
-        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
-        cursor: pointer;
-    }
-
     #p-error {
-        visibility: hidden;
         margin-top: 0px;
         font-size: 1rem;
         font-weight: 400;
-        color: hsl(0, 93%, 68%);
         margin-left: 2.5rem;
     }
 
