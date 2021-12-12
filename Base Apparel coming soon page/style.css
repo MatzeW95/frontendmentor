@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Open+Sans&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+}
+
+@media screen and (min-width: 900px) {
+
+    #container-main {
+       display: flex;
+       height: 100vh;
+    }
+
+    #container-left {
+        background-image: url("./images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 58%;
+    }
+
+    #container-text {
+        width: 60%;
+        margin: 7.5% 15% 25%;
+    }
+
+    h1 {
+        margin: 8rem 0px 0px;
+        font-size: 4.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        line-height: 1.1;
+        color: hsl(0, 6%, 24%);
+    }
+
+    h1 > span {
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    #container-email {
+        display: flex;    
+    }
+
+    #input-email {
+        width: 80%;
+        color: hsl(0, 6%, 24%);
+        box-sizing: border-box;
+        border: 2px solid hsl(0, 36%, 70%);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url("./images/icon-error.svg");
+        background-position: 75% 12px; 
+        background-repeat: no-repeat;
+        background-size: 0 0;
+        padding: 15px 20px 15px 40px;
+        outline: none;
+    }
+
+    ::placeholder {
+        color: hsl(0, 36%, 70%);
+    }
+
+    #a-button {
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        padding: 18px 40px;
+        border-radius: 50px;
+        height: 16px;
+        position: relative;
+        left: -50px;
+        display: flex;
+    }
+
+    #a-button:hover, #a-button:active {
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+        cursor: pointer;
+    }
+
+    #p-error {
+        visibility: hidden;
+        margin-top: 0px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: hsl(0, 93%, 68%);
+        margin-left: 2.5rem;
+    }
+
+    #container-right {
+        width: 42%;
+        background-image: url("./images/hero-desktop.jpg");
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    
+}

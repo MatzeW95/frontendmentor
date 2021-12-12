@@ -14,19 +14,27 @@
   <main>
     <div id="container-main">
       <div id="container-left">
-        <img id="img-logo" src="./images/logo.svg" alt="Logo">
-        <h1>
-          <span>We're</span> coming soon
-        </h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-        Email Address
+        <div id="container-text">
+          <img id="img-logo" src="./images/logo.svg" alt="Logo">
+          <h1>
+            <span>We're</span> coming soon
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <div id="container-email">
+            <input type="email" placeholder="Email Address" id="input-email">
+            <a id="a-button" rel="nofollow"><img id="img-arrow" alt="Arrow" src="./images/icon-arrow.svg"/></a>
+          </div>
+          <p id="p-error">
+            Please provide a valid email
+          </p>
+        </div>
       </div>
       <div id="container-right">
-        <img id="img-main" alt="Women">
       </div>
     </div>
+    <script src="./main.js"></script>
     <!--
       <footer>
       <p class="attribution">
