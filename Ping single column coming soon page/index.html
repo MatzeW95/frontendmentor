@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./style.css">
@@ -12,20 +15,28 @@
 </head>
 <body>
   <main>
-    <div id="container.main">
+    <div id="container-main">
       <img id="img-logo" src="./images/logo.svg" alt="logo">
       <h1>
-        We are launching <span>soon!</span>
+        We are launching <span>soon<span>!</span></span>
       </h1>
-      <p>
+      <p id="p-text">
         Subscribe and get notified
       </p>
       <div id="container-data">
-        Notify Me
+        <input id="input-email" type="email" placeholder="Your email address...">
+        <a id="a-notify">
+          Notify Me
+        </a> 
       </div>
+      <p id="p-error">
+        Please provide a valid email address
+      </p>
       <img id="img-main" src="./images/illustration-dashboard.png" alt="Project-ping">
       <div id="container-social">
-
+        <ion-icon id="icon-facebook" name="logo-facebook" alt="facebook"></ion-icon>
+        <ion-icon id="icon-twitter" name="logo-twitter" alt="twitter"></ion-icon>
+        <ion-icon id="icon-instagram" name="logo-instagram" alt="instagram"></ion-icon>
       </div>
       <p id="p-copyright">
         &copy; Copyright Ping. All rights reserved.

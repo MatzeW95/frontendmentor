@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    background-color: white;
+}
+
+#container-main {
+    width: 40%;
+    margin: 5rem 30% 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2rem 0 0;
+}
+
+h1 > span {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+h1 > span > span {
+    font-weight: 700;
+}
+
+#p-text {
+    color: hsl(209, 33%, 12%);
+    font-size: 1em;
+}
+
+#container-data {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0;
+}
+
+#input-email {
+    width: 65%;
+    padding: 0.8rem 1rem 0.8rem 1.5rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+}
+
+#a-notify {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: 20%;
+    padding: 0.8rem 1rem;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#p-error {
+    text-align: left;
+    margin: 0 0 5rem 1.5rem;
+    font-size: 0.7rem;
+    color: hsl(354, 100%, 66%);
+    visibility: hidden;
+}
+
+#img-main {
+    width: 100%;
+}
+
+#container-social {
+    color: hsl(223, 87%, 63%);
+    margin: 5rem 0 1rem;
+}
+
+ion-icon {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    padding: 3px;
+}
+
+#p-copyright {
+    font-size: 0.8rem;
+}
+
+#a-notify:hover {
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+
+ion-icon:hover {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+@media screen and (min-width: 900px){
+    
+}
+
+@media screen and (max-width: 899px){
+    
+}
