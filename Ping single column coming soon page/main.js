@@ -13,7 +13,7 @@ button.addEventListener("click", () => {
         window.location.replace("");
     }
     else {
-        error.style.visibility = "visible";
+        error.style.display = "flex";
         input.style.border = "solid 1px hsl(354, 100%, 66%)";
 
         console.log("Your email is invalid!");
