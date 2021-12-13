@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (68)    viewport > 900px
+
+-   (126)    viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;400;600&display=swap');
 
+/* universal css */
 body {
     margin: 0px;
     padding: 0px;
@@ -49,6 +65,7 @@ h2, h1 {
     display: flex;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px){
     
     #container-main {
@@ -106,6 +123,7 @@ h2, h1 {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px){
 
     #container-main {
