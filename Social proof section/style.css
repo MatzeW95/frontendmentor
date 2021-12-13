@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (97)    viewport > 900px
+
+-   (203)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Spartan:wght@400;500;700&display=swap');
 
+/* universal css */
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
@@ -78,6 +94,7 @@ p {
    color: hsl(333, 80%, 67%); 
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px) {
     body {
         background-image:   url(./images/bg-pattern-top-desktop.svg),
@@ -183,6 +200,7 @@ p {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px) {
     body {
         background-image:   url(./images/bg-pattern-top-mobile.svg),

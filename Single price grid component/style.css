@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (93)    viewport > 900px
+
+-   (141)   viewport < 900px
+
+*/
+
+/* font import*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+/* universal css */
 body {
     margin: 0px;
     padding: 0px;
@@ -74,6 +90,7 @@ ul {
     text-align: center;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px){
 
     #div-main-container {
@@ -121,6 +138,7 @@ ul {
     } 
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px){
     #div-main-container {
         width: 90%;

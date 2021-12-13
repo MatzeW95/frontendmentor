@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (49)    viewport > 900px
+
+-   (120)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
+/* universal css */
 span {
     color: hsl(277, 64%, 61%);
 }
@@ -30,6 +46,7 @@ span {
     text-transform: uppercase;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px){
 
     body {
@@ -99,6 +116,8 @@ span {
         border-bottom-right-radius: 10px;
     }
 }
+
+/* viewport < 900px */
 @media screen and (max-width: 899px){
    
     body {

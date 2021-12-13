@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (139)   state css
+
+-   (153)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+/* universal css */
 body {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
@@ -88,11 +104,6 @@ body {
     width: 20%;
 }
 
-#btn-change:active, #btn-change:hover {
-    text-decoration: none;
-    color: hsl(224, 23%, 55%);
-}
-
 #btn-payment {
     width: 80%;
     display: block;
@@ -111,10 +122,6 @@ body {
     cursor: pointer;
 }
 
-#btn-payment:active, #btn-payment:hover {
-    background-color: hsl(224, 23%, 55%);
-}
-
 #btn-cancel {
     text-align: center;
     margin-bottom: 25px;
@@ -129,10 +136,21 @@ body {
     width: fit-content;
 }
 
+/* state css */
+#btn-change:active, #btn-change:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+#btn-payment:active, #btn-payment:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
 #btn-cancel:active, #btn-cancel:hover {
     color: black;
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px){
    body {
     background-image: url("images/pattern-background-mobile.svg");

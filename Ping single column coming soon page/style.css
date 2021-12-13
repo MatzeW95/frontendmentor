@@ -1,5 +1,23 @@
+/* 
+
+Table of content
+
+-   (17)    font import
+
+-   (20)    universal css
+
+-   (104)   state css
+
+-   (115)   viewport > 900px
+
+-   (166)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
+/* universal css */
 body {
     margin: 0px;
     padding: 0px;
@@ -83,6 +101,7 @@ ion-icon {
     font-size: 0.7rem;
 }
 
+/* state css */
 #a-notify:hover {
     background-color: hsl(223, 100%, 88%);
     cursor: pointer;
@@ -93,6 +112,7 @@ ion-icon:hover {
     background-color: hsl(223, 87%, 63%);
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px){
    
     #container-main {
@@ -143,6 +163,7 @@ ion-icon:hover {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px){
     
     #container-main {

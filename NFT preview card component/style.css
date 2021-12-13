@@ -1,5 +1,23 @@
+/* 
+
+Table of content
+
+-   (17)    font import
+
+-   (20)    universal css
+
+-   (111)   state css
+
+-   (122)   viewport > 900px
+
+-   (161)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
 
+/* universal css */
 body{
     margin: 0px;
     padding: 0px;
@@ -62,9 +80,12 @@ h1 {
     color: white;
 }
 
-h1:hover, #div-author > span:hover {
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
+#img-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #div-img-overlay {
@@ -81,18 +102,16 @@ h1:hover, #div-author > span:hover {
     border-radius: 5px;
 }
 
-#img-hover {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 #div-img-container {
     position: relative;
     width: 100%;
     display:flexbox;
+}
+
+/* state css */
+h1:hover, #div-author > span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 #div-img-container:hover #div-img-overlay {
@@ -100,6 +119,7 @@ h1:hover, #div-author > span:hover {
     opacity: 1;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px) {
     
     #div-main-container {
@@ -138,6 +158,7 @@ h1:hover, #div-author > span:hover {
     }    
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px) {
    
     #div-main-container {

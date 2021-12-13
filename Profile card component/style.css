@@ -1,5 +1,21 @@
+/* 
+
+Table of content
+
+-   (15)    font import
+
+-   (18)    universal css
+
+-   (80)    viewport > 900px
+
+-   (130)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+/* universal css */
 body {
     margin: 0px;
     padding: 0px;
@@ -61,6 +77,7 @@ span {
     letter-spacing: 0.1rem;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px) {
 
     #img-background1 {
@@ -110,6 +127,7 @@ span {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px) {
     #img-background1 {
         position: absolute;
