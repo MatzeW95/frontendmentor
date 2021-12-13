@@ -8,15 +8,15 @@ button.addEventListener("click", () => {
     let str = input.value;
 
     if(regex.test(str)) {
-        error.style.visibility = "hidden";
-        input.style.borderColor = "2px solid hsl(0, 36%, 70%)";
-        input.style.backgroundSize = "0 0";
-    
-        setTimeout(() => { alert("Your email is valid!") }, 1000)
+        console.log("Your email is valid!");
+
+        window.location.replace("");
     }
     else {
         error.style.visibility = "visible";
         input.style.border = "solid 2px hsl(0, 93%, 68%)";
         input.style.backgroundSize = "25px 25px";
+
+        console.log("Your email is invalid!");
     }
 });
