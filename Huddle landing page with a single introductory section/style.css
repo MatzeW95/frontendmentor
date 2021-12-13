@@ -1,5 +1,23 @@
+/* 
+
+Table of content
+
+-   (17)    font import
+
+-   (20)    universal css
+
+-   (53)    state css
+
+-   (59)    viewport > 900px
+
+-   (127)   viewport < 900px
+
+*/
+
+/* font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
+/* universal css */
 body {
     margin: 0px;
     padding: 0px;
@@ -32,11 +50,13 @@ h1 {
     text-align: center;
 }
 
+/* state css */
 #a-register:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px) {
     body {
         background-image: url("./images/bg-desktop.svg");
@@ -104,6 +124,7 @@ h1 {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px) {
     body {
         background-image: url("./images/bg-mobile.svg");
