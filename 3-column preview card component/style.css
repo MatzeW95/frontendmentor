@@ -1,5 +1,23 @@
+/* 
+
+Table of content
+
+-   (17)    font import
+
+-   (20)    universal css
+
+-   (85)    state css
+
+-   (101)   viewport > 900px
+
+-   (133)    viewport < 900px
+
+*/
+
+/* font import*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
+/* universal css */
 body {
     background-color: hsl(0, 0%, 95%);
     margin: 0px;
@@ -64,6 +82,7 @@ body {
     color: hsl(179, 100%, 13%);
 }
 
+/* state css */
 #button-lm1:hover {
     background-color: hsl(31, 77%, 52%);
     color:hsl(0, 0%, 95%);
@@ -79,6 +98,7 @@ body {
     color:hsl(0, 0%, 95%);
 }
 
+/* viewport > 900px */
 @media screen and (min-width: 900px){
 
     .main-text {
@@ -110,6 +130,7 @@ body {
     }
 }
 
+/* viewport < 900px */
 @media screen and (max-width: 899px){
 
     body {
