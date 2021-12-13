@@ -12,6 +12,8 @@
 
 ### https://matzew95.github.io/frontendmentor/Order%20summary%20component
 
+### https://matzew95.github.io/frontendmentor/Ping%20single%20column%20coming%20soon%20page/
+
 ### https://matzew95.github.io/frontendmentor/Profile%20card%20component
 
 ### https://matzew95.github.io/frontendmentor/Single%20price%20grid%20component
