@@ -64,8 +64,8 @@ span {
 /* state css */
 ::placeholder {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400; 
+    font-size: 0.8rem;
+    font-weight: 500; 
 }
 
 /* viewport > 900px */
@@ -83,6 +83,52 @@ span {
 
     #container-left, #container-right {
         width: 50%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+
+    #container-left > p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    #container-pricing {
+        border-radius: 10px;
+        margin: 0 0 1rem;
+    }
+
+    #container-pricing > p {
+        font-size: 0.9rem;
+        padding: 1em 0; 
+        margin: 0px;
+    }
+
+    #container-input {
+        gap: 1rem;
+        border-radius: 10px;
+    }
+
+    .input-form {
+        padding: 1rem 2rem;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: hsl(246, 25%, 77%);
+        font-size: 0.9rem;
+    }
+
+    #a-claim {
+        font-size: 0.9rem;
+        padding: 1em 0;
+        border-radius: 5px;
+    } 
+
+    #container-input > p {
+        font-size: 0.6rem;
+        margin: 0;
     }
 }
 /* viewport < 900px */
