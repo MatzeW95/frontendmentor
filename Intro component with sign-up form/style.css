@@ -93,6 +93,11 @@ span {
     border: 1px solid hsl(248, 32%, 49%);
 }
 
+#a-claim:hover {
+    cursor: pointer;
+    background-color: hsl(154, 90%, 61%);
+}
+
 /* viewport > 900px */
 @media screen and (min-width: 900px) {
     body {
