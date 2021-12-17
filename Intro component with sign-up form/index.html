@@ -29,19 +29,30 @@
         </div>
         <div id="container-input">
           <input class="input-form" id="input-firstName" type="text" placeholder="First Name">
+          <p class="p-error">
+            First Name cannot be empty
+          </p>
           <input class="input-form" id="input-lastName" type="text" placeholder="Last Name">
+          <p class="p-error">
+            Last Name cannot be empty
+          </p>
           <input class="input-form" id="input-email" type="email" placeholder="Email Address">
+          <p class="p-error">
+            Looks like this is not an email
+          </p>
           <input class="input-form" id="input-password" type="password" placeholder="Password">
-          <a id="a-claim" href="">
+          <p class="p-error">
+            Password cannot be empty
+          </p>
+          <a id="a-claim">
             Claim your free trial
           </a>
-          <p>
+          <p id="p-tos">
             By clicking the button, you are agreeing to our <span>Terms and Services</span>
           </p>
         </div>
       </div>
     </div>
-    <script src="./main.js"></script>
     <!--
     <footer>
       <p class="attribution">
@@ -51,5 +62,6 @@
     </footer>
     -->
   </main>
+  <script src="./main.js"></script>
 </body>
 </html>
