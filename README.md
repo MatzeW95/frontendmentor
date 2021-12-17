@@ -8,6 +8,8 @@
 
 ### https://matzew95.github.io/frontendmentor/Huddle%20landing%20page%20with%20a%20single%20introductory%20section
 
+### https://matzew95.github.io/frontendmentor/Intro%20component%20with%20sign-up%20form/
+
 ### https://matzew95.github.io/frontendmentor/NFT%20preview%20card%20component
 
 ### https://matzew95.github.io/frontendmentor/Order%20summary%20component
