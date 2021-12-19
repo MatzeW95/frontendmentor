@@ -41,6 +41,10 @@ body {
     box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.15), 0px 0px 2px 1px rgba(220, 132, 161, 0.5), 0px 7px 0px rgba(0, 0, 0, 0.15);
 }
 
+#container-pricing > p > span {
+    font-weight: 600;
+}
+
 #container-input {
     display: flex;
     flex-direction: column;
@@ -79,7 +83,7 @@ body {
     text-align: center;
 }
 
-span {
+#p-tos > span {
     color: hsl(0, 100%, 74%);
 }
 /* state css */
@@ -108,7 +112,7 @@ span {
     #container-main {
         width: 70%;
         margin: 5rem 15%;
-        align-items: center
+        align-items: center;
     }
 
     #container-left, #container-right {
@@ -166,5 +170,13 @@ span {
     body {
         background-image: url("./images/bg-intro-mobile.png");
         background-color: hsl(0, 100%, 74%);
-    } 
+    }
+
+    #container-main {
+        flex-direction: column;
+    }
+
+    #container-left {
+        text-align: center;
+    }
 }
