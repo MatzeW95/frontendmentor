@@ -12,26 +12,6 @@ claim.addEventListener("click", () => {
     let str = email.value;
     let errorCounter = 0;
 
-    if(regex.test(str)) {
-
-        email.style.color = "Black";
-        error[2].style.visibility = "hidden";
-        error[2].style.margin = "0";
-        input[2].style.backgroundSize = "0";
-
-        console.log("Your email is valid!");
-    }
-    else {
-        email.style.color = "hsl(0, 100%, 74%)";
-        error[2].style.visibility = "visible";
-        error[2].style.margin = "0 0 1rem";
-        input[2].style.backgroundSize = "25px 25px";
-        
-        errorCounter++;
-
-        console.log("Your email is invalid!");
-    }
-
     for (var x = 0; x < input.length; x++) {
         
         if (input[x].value == null || input[x].value == "") {
@@ -51,6 +31,26 @@ claim.addEventListener("click", () => {
 
             input[x].style.backgroundSize = "0"; 
         }
+    }
+
+    if(regex.test(str)) {
+
+        email.style.color = "Black";
+        error[2].style.visibility = "hidden";
+        error[2].style.margin = "0";
+        input[2].style.backgroundSize = "0";
+
+        console.log("Your email is valid!");
+    }
+    else {
+        email.style.color = "hsl(0, 100%, 74%)";
+        error[2].style.visibility = "visible";
+        error[2].style.margin = "0 0 1rem";
+        input[2].style.backgroundSize = "25px 25px";
+        
+        errorCounter++;
+
+        console.log("Your email is invalid!");
     }
     
     if (errorCounter == 0) {
