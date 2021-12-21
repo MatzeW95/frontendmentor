@@ -8,9 +8,9 @@ Table of content
 
 -   (86)    state css
 
--   (91)    viewport > 900px
+-   (88)    viewport > 900px
 
--   (144)   viewport < 900px
+-   (145)   viewport < 900px
 
 */
 
@@ -84,9 +84,6 @@ h1 {
   }
 
 /* state css */
-.accordion:hover {
-    color: hsl(14, 88%, 65%);
-  }
 
 /* viewport > 900px */
 @media screen and (min-width: 900px){
@@ -139,6 +136,10 @@ h1 {
     #img-main-mobile {
         display: none;
     }
+
+    .accordion:hover {
+        color: hsl(14, 88%, 65%);
+    }
 }
 
 /* viewport < 900px */
@@ -179,6 +180,7 @@ h1 {
 
     .accordion {
         padding: 1rem 0;
+        -webkit-tap-highlight-color: transparent;
     }
 
     h1 {
