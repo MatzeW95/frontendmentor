@@ -74,14 +74,14 @@ h1 {
 }
 
 #container-accordion {
-    padding: 0 5rem 0 0;
+    padding: 0 7rem 0 0;
     margin: 0 0 5rem;
 }
 
 .accordion {
     width: 100%;
     text-align: left;
-    padding: 18px 0;
+    padding: 1rem 0;
     background-color: white;
     outline: none;
     border: none;
@@ -91,6 +91,8 @@ h1 {
 }
 
 .accordion:after {
+    content: url("./images/icon-arrow-down.svg");
+    transition: 0.2s;
     color: #777;
     font-weight: bold;
     float: right;
@@ -98,7 +100,6 @@ h1 {
   }
 
 .panel {
-    padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -106,9 +107,19 @@ h1 {
     border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
+.panel > p {
+    margin: 0 0 1rem;
+}
+
 .active {
     font-weight: 700;
 }
+
+.active:after {
+    content: url("./images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+    transition: 0.4s;
+  }
 
 /* state css */
 .accordion:hover {
