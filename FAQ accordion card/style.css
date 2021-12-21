@@ -32,50 +32,12 @@ body {
 
 #container-main {
     background-color: white;
-    width: 70%;
-    margin: 10rem 15% 0;
-
     border-radius: 20px;
     display: flex;
 }
 
-#container-left {
-    width: 50%;
-    background-image: url("./images/bg-pattern-desktop.svg");
-    background-position: 122% 70%;
-    background-repeat: no-repeat;
-
-    position: relative;
-    overflow: hidden;
-}
-
-#img-main {
-    position: absolute;
-    top: 15%;
-    left: -15%;
-    z-index: 1;
-}
-
-#img-box {
-    position: absolute;
-    top: 40%;
-    left: 8.5%;
-    z-index: 2;
-}
-
-#container-right {
-    width: 50%;
-}
-
 h1 {
-    color: hsl(237, 12%, 33%);
-    font-size: 2rem;
-    margin: 4rem 0 2rem;
-}
-
-#container-accordion {
-    padding: 0 7rem 0 0;
-    margin: 0 0 5rem;
+    color: hsl(238, 29%, 16%);
 }
 
 .accordion {
@@ -86,7 +48,7 @@ h1 {
     outline: none;
     border: none;
     cursor: pointer;
-    color: hsl(237, 12%, 33%);
+    color: hsl(238, 29%, 16%);
     transition: 0.4s;
 }
 
@@ -127,5 +89,106 @@ h1 {
   }
 
 /* viewport > 900px */
+@media screen and (min-width: 900px){
+
+    #container-main {
+        width: 60%;
+        margin: 5rem 20% 0;
+    }
+
+    #container-left {
+        width: 50%;
+        background-image: url("./images/bg-pattern-desktop.svg");
+        background-position: 107% 65%;
+        background-repeat: no-repeat;
+
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #container-right {
+        width: 50%;
+    }
+    
+    #container-accordion {
+        padding: 0 5rem 0 2rem;
+        margin: 0 0 5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 4rem 0 2rem 2rem;
+    }
+
+    #img-main {
+        position: absolute;
+        top: 15%;
+        left: -18%;
+        z-index: 1;
+        display: block;
+    }
+    
+    #img-box {
+        position: absolute;
+        top: 32%;
+        left: 13.6%;
+        z-index: 2;
+        display: block;
+    }
+
+    #img-main-mobile {
+        display: none;
+    }
+}
 
 /* viewport < 900px */
+@media screen and (max-width: 899px){
+    
+    #container-main {
+        flex-direction: column;
+        width: 90%;
+        margin: 9rem 5% 0;
+    }
+
+    #img-main, #img-box {
+        display: none;
+    }
+
+    #container-left {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-image: url("./images/bg-pattern-mobile.svg");
+        background-position: 50% 17%;
+        background-repeat: no-repeat;
+        height: 7rem;
+    }
+
+    #img-main-mobile {
+        width: 65%;
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 17%;
+    }
+
+    #container-right {
+        width: 90%;
+        margin: 0 5% 3rem;
+    }
+
+    .accordion {
+        padding: 1rem 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .panel > p {
+        line-height: 1.6;
+        font-size: 1em;
+        padding-right: 50px;
+    }
+}
