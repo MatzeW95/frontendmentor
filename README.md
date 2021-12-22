@@ -2,6 +2,8 @@
 
 ### https://matzew95.github.io/frontendmentor/3-column%20preview%20card%20component
 
+### https://matzew95.github.io/frontendmentor/Article%20preview%20component
+
 ### https://matzew95.github.io/frontendmentor/Base%20Apparel%20coming%20soon%20page
 
 ### https://matzew95.github.io/frontendmentor/FAQ%20accordion%20card
