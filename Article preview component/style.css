@@ -4,22 +4,252 @@ Table of content
 
 -   (17)    font import
 
--   (19)    universal css
+-   (20)    universal css
 
--   (21)    state css
+-   (83)    state css
 
--   (23)    viewport > 900px
+-   (89)    viewport > 900px
 
--   (25)    viewport < 900px
+-   (182)   viewport < 900px
 
 */
 
 /* font import */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
 /* universal css */
+body {
+    margin: 0px;
+    padding: 0px;
 
-/* state css */
+    font-family: "Manrope" ,sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    background-color: hsl(210, 46%, 95%);
+}
+
+#container-main {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#container-main-left {
+    background-image: url("./images/drawers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: hsl(217, 19%, 35%);
+}
+
+#container-bottom {
+    display: flex;
+    align-items: center;
+}
+
+#img-avatar {
+    width: 2.5rem;
+    border-radius: 50px;
+}
+
+#container-middle {
+    margin-left: 1rem;
+}
+
+#div-name {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+#div-date {
+    color: hsl(212, 23%, 69%);
+}
+
+#container-right {
+    margin-left: auto;
+    display: flex;
+}
+
+#img-share {
+    border-radius: 50px;
+    width: 1rem;
+    padding: 10px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+/* state css */  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 
 /* viewport > 900px */
+@media screen and (min-width: 900px) {
+    
+    #container-main {
+        width: 55%;
+        margin: 15% auto 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    
+    #container-main-left {
+        width: 38%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    #img-main {
+        width: 100%;
+    }
+    
+    #container-main-right {
+        width: 62%;
+    }
+
+    #container-content {
+        margin: 2rem 2.5rem 1rem;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+        margin: 0px;
+    }
+    
+    p {
+        line-height: 1.6;
+        font-size: 1.1em;
+        margin: 1rem 0 1rem;
+    }
+
+    #container-bottom {
+        margin: 0 2.5rem 1.5rem;
+    }
+    
+    .a-share {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+    }
+      
+    .a-share .popupClass {
+        visibility: hidden;
+        width: 160px;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        text-align: center;
+        border-radius: 6px;
+        padding: 0.8rem 1rem;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 0;
+        margin-left: -80px;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 4px;
+    }
+     
+    .a-share .popupClass::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+      
+    .a-share .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    #img-share:hover, #img-share:active, #img-share:focus {
+        /*
+        background-color: hsl(214, 17%, 51%);
+        
+        need to filter the svg white
+        */
+    }
+}
 
 /* viewport < 900px */
+@media screen and (max-width: 899px) {
+    
+    #container-main {
+        width: 90%;
+        margin: 5rem auto 0;
+        flex-direction: column;
+    }
+
+    #container-main-left {
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-position: 0px -20px;
+    }
+
+    #container-content {
+        margin: 0.5rem 2rem;
+    }
+
+    #container-bottom {
+        padding: 0.5rem 2rem 0.5rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.05rem;
+        margin: 2rem 0 1rem;
+    }
+
+    p {
+        font-size: 1em;
+        padding-right: 18px;
+        margin: 0 0 1.5rem;
+        line-height: 1.6;
+    }
+
+    .a-share {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .popupClass {
+        visibility: hidden;
+        width: 200px;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        text-align: center;
+        border-radius: 6px;
+        padding: 0.8rem 1rem;
+        position: absolute;
+        z-index: 1;
+        bottom: -10%;
+        right: 150%;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 4px;
+    }
+
+    .a-share .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    .container-background .color {
+        background-color: green;
+        animation: fadeIn 1s;
+    }
+}
