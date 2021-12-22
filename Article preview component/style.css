@@ -10,7 +10,7 @@ Table of content
 
 -   (89)    viewport > 900px
 
--   (182)   viewport < 900px
+-   (184)   viewport < 900px
 
 */
 
@@ -170,13 +170,15 @@ h1 {
         animation: fadeIn 1s;
     }
 
+    /*
     #img-share:hover, #img-share:active, #img-share:focus {
-        /*
+        
         background-color: hsl(214, 17%, 51%);
         
         need to filter the svg white
-        */
+        
     }
+    */
 }
 
 /* viewport < 900px */
