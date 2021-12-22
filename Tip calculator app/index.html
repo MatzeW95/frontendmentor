@@ -5,40 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <img class="imgHeader" src="./images/logo.svg" alt="logo">
+    <div class="containerMain">
+      <div class="containerFlex">
+        <div class="container">
+          <p class="pHeadlineLeft">
+            Bill
+          </p>
+          <input type="number" id="inputBill">
+        </div>
+        <div class="container">
+          <p class="pHeadlineLeft">
+            Select Tip %
+          </p>
+          <div>
+            <div>
+              <button id="btn5">
+                5%
+              </button>
+              <button id="btn10">
+                10%
+              </button>
+              <button id="btn15">
+                15%
+              </button>
+            </div>
+            <div>
+              <button id="btn25">
+                25%
+              </button>
+              <button id="btn50">
+                50%
+              </button>
+              <input type="number" id="inputTip" placeholder="Custom">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="divError">
+            <p class="pHeadlineLeft">
+              Number of People
+            </p>
+            <p id="pError">
+              Can't be zero
+            </p>
+          </div>
+          <input type="number" id="inputPeople">
+        </div>
+      </div>
+      <div class="containerFlex">
+        <div class="container">
+          <div class="containerRight">
+            <p class="pHeadlineRight">
+              Tip Amount
+            </p>
+            <span>
+              / person
+            </span>
+          </div>
+          <img class="imgDollar" src="./images/icon-dollar.svg" alt="dollar">
+          <p class="pDollar">
+            0.00
+          </p>
+        </div>
+        <div class="container">
+          <div class="containerRight">
+            <p class="pHeadlineRight">
+              Total
+            </p>
+            <span>
+              / person
+            </span>
+          </div>
+          <img class="imgDollar" src="./images/icon-dollar.svg" alt="dollar">
+          <p class="pDollar">
+            0.00
+          </p> 
+        </div>
+        <div class="container">
+          <button id="buttonReset">
+            Reset
+          </button>
+        </div> 
+      </div>
+    </div>
+    <!--
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    -->
+  </main>
+  <script src="./main.js"></script>
 </body>
 </html>
