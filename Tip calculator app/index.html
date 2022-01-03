@@ -14,54 +14,46 @@
   <main>
     <img class="imgHeader" src="./images/logo.svg" alt="logo">
     <div class="containerMain">
-      <div class="containerFlex">
-        <div class="container">
-          <p class="pHeadlineLeft">
-            Bill
-          </p>
-          <input type="number" id="inputBill">
-        </div>
-        <div class="container">
-          <p class="pHeadlineLeft">
-            Select Tip %
-          </p>
-          <div>
-            <div>
-              <button id="btn5">
-                5%
-              </button>
-              <button id="btn10">
-                10%
-              </button>
-              <button id="btn15">
-                15%
-              </button>
-            </div>
-            <div>
-              <button id="btn25">
-                25%
-              </button>
-              <button id="btn50">
-                50%
-              </button>
-              <input type="number" id="inputTip" placeholder="Custom">
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div id="divError">
+      <div id="containerFlexLeft">
+        <form>
+          <div class="container">
             <p class="pHeadlineLeft">
-              Number of People
+              Bill
             </p>
-            <p id="pError">
-              Can't be zero
-            </p>
+            <input type="number" id="inputBill">
           </div>
-          <input type="number" id="inputPeople">
-        </div>
+          <div class="container">
+            <p class="pHeadlineLeft">
+              Select Tip %
+            </p>
+            <div id="containerButton">
+              <div class="containerButton">
+                <button type="button" class="inputTip" id="btn5" value="5%">5%</button>
+                <button type="button" class="inputTip" id="btn10" value="10%">10%</button>
+                <button type="button" class="inputTip" id="btn15" value="15%">15%</button>
+              </div>
+              <div class="containerButton">
+                <button type="button" class="inputTip" id="btn25" value="25%">25%</button>
+                <button type="button" class="inputTip" id="btn50" value="50%">50%</button>
+                <input type="number" class="inputTip" id="inputTip" placeholder="Custom">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div id="divError">
+              <p class="pHeadlineLeft">
+                Number of People
+              </p>
+              <p id="pError">
+                Can't be zero
+              </p>
+            </div>
+            <input type="number" id="inputPeople">
+          </div>
+        </form>
       </div>
-      <div class="containerFlex">
-        <div class="container">
+      <div id="containerFlexRight">
+        <div class="containerDollar">
           <div class="containerRight">
             <p class="pHeadlineRight">
               Tip Amount
@@ -71,11 +63,11 @@
             </span>
           </div>
           <img class="imgDollar" src="./images/icon-dollar.svg" alt="dollar">
-          <p class="pDollar">
+          <p class="pDollar" id="dollarTip">
             0.00
           </p>
         </div>
-        <div class="container">
+        <div class="containerDollar">
           <div class="containerRight">
             <p class="pHeadlineRight">
               Total
@@ -85,12 +77,12 @@
             </span>
           </div>
           <img class="imgDollar" src="./images/icon-dollar.svg" alt="dollar">
-          <p class="pDollar">
+          <p class="pDollar" id="dollarTotal">
             0.00
           </p> 
         </div>
         <div class="container">
-          <button id="buttonReset">
+          <button type="reset" id="buttonReset">
             Reset
           </button>
         </div> 
