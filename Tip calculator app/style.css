@@ -15,8 +15,116 @@ Table of content
 */
 
 /* font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 /* universal css */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Mono", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: hsl(185, 41%, 84%);
+    box-sizing: border-box;
+    /*
+    hsl(183, 100%, 15%)
+    hsl(186, 14%, 43%)
+    hsl(184, 14%, 56%)
+    hsl(185, 41%, 84%)
+    hsl(189, 41%, 97%)
+    hsl(0, 0%, 100%);
+    */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.pHeadlineLeft, .pHeadlineRight, #pError {
+    font-size: 1rem;
+    margin: 0px;
+}
+
+span {
+    font-size: 1rem;
+}
+
+.containerMain {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 66.6%;
+    margin: auto;
+}
+
+.imgHeader {
+    width: 100px;
+    margin: 5rem auto 2rem;
+}
+
+#containerFlexLeft {
+    width: 50%;
+    margin: 2rem;
+}
+
+#containerFlexRight {
+    background-color: hsl(183, 100%, 15%);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.inputTip {
+    width: 30%;
+    height: 2.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#inputBill {
+    background-image: url("./images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    width: 100%;
+    text-align: right;
+}
+
+#inputTip {
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#inputPeople {
+    background-image: url("./images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    width: 100%;
+    text-align: right;
+}
+
+#divError {
+    display: flex;
+}
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 0 0;
+}
+
+.containerDollar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /* state css */
 
