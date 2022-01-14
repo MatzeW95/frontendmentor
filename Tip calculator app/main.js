@@ -5,6 +5,8 @@ var inputPeople = document.getElementById("inputPeople");
 var tip = document.getElementById("dollarTip");
 var total = document.getElementById("dollarTotal");
 
+var reset = document.getElementById("buttonReset");
+
 document.getElementById("btn5").addEventListener("click", refreshPrice);
 document.getElementById("btn10").addEventListener("click", refreshPrice);
 document.getElementById("btn15").addEventListener("click", refreshPrice);
@@ -13,11 +15,13 @@ document.getElementById("btn50").addEventListener("click", refreshPrice);
 
 inputTip.addEventListener("input", refreshPrice);
 
-document.getElementById("buttonReset").addEventListener("click", resetAll);
+reset.addEventListener("click", resetAll);
 
 function refreshPrice() {
     tip.textContent = getTip();
     total.textContent = getTotal();
+
+    resetBackgroundColor(getTip);
 }
 
 function getTip() {
@@ -39,4 +43,16 @@ function resetAll() {
 
     tip.textContent = "0.00";
     total.textContent = "0.00";
+
+    reset.style.backgroundColor = "rgb(0, 107, 111)";
+}
+
+function resetBackgroundColor (tip) {
+    
+    if (this == "0.00") {
+        reset.style.backgroundColor = "rgb(0, 107, 111)";
+    }
+    else {
+        reset.style.backgroundColor = "rgb(133, 236, 225)";
+    }
 }
