@@ -49,7 +49,6 @@ h1 {
 
 p {
     font-size: 15px;
-    margin: 1rem;
 }
 
 .imgQR {
@@ -71,6 +70,10 @@ p {
     h1 {
         font-size: 1.3rem;
     }
+
+    p {
+        margin: 1rem;
+    }
 }
 
 /* viewport < 900px */
@@ -84,5 +87,9 @@ p {
 
     h1 {
         font-size: 1.4rem;
+    }
+    
+    p {
+        margin: 1.1rem;
     }
 }
