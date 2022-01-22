@@ -22,6 +22,8 @@
 
 ### https://matzew95.github.io/frontendmentor/Profile%20card%20component
 
+### https://matzew95.github.io/frontendmentor/QR%20code%20component
+
 ### https://matzew95.github.io/frontendmentor/Single%20price%20grid%20component
 
 ### https://matzew95.github.io/frontendmentor/Social%20proof%20section
