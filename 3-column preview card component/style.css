@@ -84,8 +84,8 @@ body {
     color:hsl(0, 0%, 95%);
 }
 
-/* viewport > 1111px */
-@media screen and (min-width: 1111px){
+/* viewport > 1150px */
+@media screen and (min-width: 1150px){
 
     .main-text {
         margin-bottom: 100px;
@@ -116,8 +116,8 @@ body {
     }
 }
 
-/* viewport < 1110px */
-@media screen and (max-width: 1110px){
+/* viewport < 1150px */
+@media screen and (max-width: 1150px){
 
     body {
         padding-top: 20px;
