@@ -2,24 +2,87 @@
 
 Table of content
 
--   (17)    font import
+-   (18)    font import
 
--   (19)    universal css
+-   (20)    universal css
 
--   (21)    state css
+-   (61)    state css
 
--   (23)    viewport > 900px
+-   (63)    viewport > 900px
 
--   (25)    viewport < 900px
+-   (77)    viewport < 900px
 
 */
 
 /* font import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 /* universal css */
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Outfit";
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+
+    background-color: hsl(212, 45%, 89%);
+}
+
+.containerMain {
+    background-color: white;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: hsl(218, 44%, 22%);
+
+    margin: 1rem;
+}
+
+p {
+    font-size: 15px;
+    margin: 1rem;
+}
+
+.imgQR {
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* state css */
 
 /* viewport > 900px */
+@media screen and (min-width: 900px){
+    
+    .containerMain {
+        width: 20%;
+
+        margin: 6rem auto;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
 
 /* viewport < 900px */
+@media screen and (max-width: 899px){
+    
+    .containerMain {
+        width: 80%;
+
+        margin: 5rem auto 0px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
