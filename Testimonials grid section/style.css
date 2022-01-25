@@ -10,11 +10,12 @@ body {
     font-size: 13px;
 
     box-sizing: border-box;
+    background-color: hsl(210, 46%, 95%);
 }
 
 .containerMain {
-    width: 75%;
-    margin: 5rem auto 0px;
+    width: 76%;
+    margin: 4% auto 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -52,6 +53,76 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+.gridOne, .gridTwo, .gridFive {
+    color: white;
+}
+
+.gridThree, .gridFour {
+   color: hsl(219, 29%, 14%); 
+}
+
+.gridOne {
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+}
+
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container > p {
+    margin: 0px;
+}
+
+.imgAvatar {
+    border-radius: 50px;
+    width: 30px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#imgOne {
+    border-color: rgb(167, 117, 241);
+}
+#imgTwo {
+   border-color: hsl(217, 19%, 35%); 
+}
+#imgThree {
+   border-color: hsl(0, 0%, 100%); 
+}
+#imgFour {
+    border-color: hsl(0, 0%, 100%);
+}
+#imgFive {
+    border-color: hsl(263, 55%, 52%);
+}
+
+.pVG {
+    opacity: 50%;
+    font-size: 11px;
+}
+
+.hQuote {
+    font-size: 1.2rem;
+}
+
+.pText {
+    opacity: 70%;
+    line-height: 1.5;
+    margin: 0px;
 }
 
 /* state css */
