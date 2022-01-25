@@ -152,7 +152,7 @@ body {
     
     .containerMain {
         width: 90%;
-        margin: 5rem auto 0px;
+        margin: 5rem auto 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
