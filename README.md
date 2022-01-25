@@ -29,3 +29,5 @@
 ### https://matzew95.github.io/frontendmentor/Social%20proof%20section
 
 ### https://matzew95.github.io/frontendmentor/Stats%20preview%20card%20component
+
+### https://matzew95.github.io/frontendmentor/Testimonials%20grid%20section
