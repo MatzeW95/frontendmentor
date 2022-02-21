@@ -68,7 +68,6 @@ body {
 }
 
 .imgDice {
-    content: url("./images/icon-dice.svg");
     margin: 1rem;
 }
 
@@ -78,5 +77,10 @@ body {
     .containerMain {
         width: 90%;
         margin: 30vh auto 0;
+    }
+
+    .imgDivider {
+        content: url("./images/pattern-divider-mobile.svg");
+        width: 90%;
     }
 }
