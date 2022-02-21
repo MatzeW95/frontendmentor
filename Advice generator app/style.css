@@ -33,18 +33,21 @@ body {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
 }
 
-h1 {
+.advice {
     font-size: 0.9rem;
     margin: 2rem;
     color: var(--colorHighlight);
 }
 
 .quote {
-    margin: 0px;
+    margin: 0px 0px 2rem;
+    width: 90%;
+    text-align: center;
 }
 
 .imgDivider {
     content: url("./images/pattern-divider-desktop.svg");
+    width: 90%;
 }
 
 .circle {
@@ -56,6 +59,12 @@ h1 {
 
     position: relative;
     top: 25px;
+
+    cursor: pointer;
+}
+
+.circle:hover, circle:active {
+    box-shadow: 0px 0px 25px 1px var(--colorHighlight);
 }
 
 .imgDice {
@@ -63,6 +72,11 @@ h1 {
     margin: 1rem;
 }
 
-/* viewport > 900px */
-
-/* viewport < 900px */
+/* viewport <= 900px */
+@media screen and (max-width: 900px) {
+    
+    .containerMain {
+        width: 90%;
+        margin: 30vh auto 0;
+    }
+}
