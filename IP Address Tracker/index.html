@@ -2,33 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div id="mainContainer">
+      <div id="topContainer">
+        <h1>
+          IP Address Tracker
+        </h1>
+        <div id="searchContainer">
+          <input type="text" name="IP" id="inputIP" placeholder="Search for any IP address or domain">
+          <button id="submit">
 
-  IP Address Tracker
+          </button>
+        </div>
+        <div id="outputContainer">
+          <div class="output">
+            <h2 class="outputHeading">
+              IP Address
+            </h2>
+            <p class="outputData">
 
-  Search for any IP address or domain
+            </p>
+          </div>
+          <div class="output">
+            <h2 class="outputHeading">
+              Location
+            </h2>
+            <p class="outputData">
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
+            </p>
+          </div>
+          <div class="output">
+            <h2 class="outputHeading">
+              Timezone
+            </h2>
+            <p class="outputData">
+              
+            </p>
+          </div>
+          <div class="output">
+            <h2 class="outputHeading">
+              ISP
+            </h2>
+            <p class="outputData">
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="bottomContainer">
+        <div id="map"></div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div>-->
 </body>
 </html>
