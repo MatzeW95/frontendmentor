@@ -94,8 +94,8 @@ p {
    color: hsl(333, 80%, 67%); 
 }
 
-/* viewport > 900px */
-@media screen and (min-width: 900px) {
+/* viewport > 1000px */
+@media screen and (min-width: 1000px) {
     body {
         background-image:   url(./images/bg-pattern-top-desktop.svg),
                             url(./images/bg-pattern-bottom-desktop.svg);
@@ -123,6 +123,7 @@ p {
     .div-rating {
         padding: 1.5rem;
         border-radius: 5px;
+        min-width: 400px;
         width: 70%;
     }
 
@@ -174,6 +175,7 @@ p {
     .div-rating-text {
         font-size: 0.8rem;
         font-weight: 700;
+        min-width: 200px;
     }
 
     #div-bottom-flexcontainer {
@@ -200,8 +202,8 @@ p {
     }
 }
 
-/* viewport < 900px */
-@media screen and (max-width: 899px) {
+/* viewport < 1000px */
+@media screen and (max-width: 999px) {
     body {
         background-image:   url(./images/bg-pattern-top-mobile.svg),
                             url(./images/bg-pattern-bottom-mobile.svg);
