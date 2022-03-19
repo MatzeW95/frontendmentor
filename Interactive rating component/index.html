@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div id="mainContainer">
+      <div id="selectionContainer" class="contentContainer">
+        <img id="imgStar" src="./images/icon-star.svg" alt="star">
+        <h1>
+          How did we do?
+        </h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <div class="radioContainer">
+            <input class="radioButton" id=radio1 name=selection type=radio>
+            
+            <label class="labelRadio" for=radio1>1</label>
+            <input class="radioButton" id=radio2 name=selection type=radio><label class="labelRadio" for=radio2>2</label>
+            <input class="radioButton" id=radio3 name=selection type=radio><label class="labelRadio" for=radio2>3</label>
+            <input class="radioButton" id=radio4 name=selection type=radio><label class="labelRadio" for=radio2>4</label>
+            <input class="radioButton" id=radio5 name=selection type=radio><label class="labelRadio" for=radio2>5</label>
+          </div>
+          <div class="radioContainer">
+            <div class="radio"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
+          </div>
+          <button type="button">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div id="finalContainer" class="contentContainer">
+        <img src="./images/illustration-thank-you.svg" alt="ThankYou">
+        <p id="pStars">
+          You selected <!-- Add rating here --> out of 5 
+        </p>
+        <h1>
+          Thank you!  
+        </h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!  
+        </p>
+      </div>
+    </div>
+  </main>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
