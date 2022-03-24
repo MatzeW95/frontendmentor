@@ -48,20 +48,16 @@ body {
     line-height: 1.6;
 }
 
-#finalContainer {
-    display: none;
-}
-
 #imgStar {
-    width: 2rem;
+    width: 1rem;
 }
 
 #star {
     border-radius: 50%;
     background-color: var(--backgroundColorContainer);
     display: flex;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     color: var(--textColor);
@@ -70,6 +66,8 @@ body {
 
 h1 {
     margin-bottom: 0.2rem;
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 #radioContainer {
@@ -98,6 +96,44 @@ h1 {
 .radio:hover {
     background-color: var(--highlightColor) !important;
     color: var(--fontColor) !important;
+}
+
+#buttonSubmit {
+    width: 100%;
+    background-color: var(--highlightColor);
+    color: var(--fontColor);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    border: 0px;
+    outline-style: none;
+}
+
+#buttonSubmit:hover, #buttonSubmit:active {
+    background-color: var(--fontColor);
+    color: var(--highlightColor);
+}
+
+#finalContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#pStars {
+    margin-top: 2rem;
+    padding: 0.3rem 1rem;
+    height: 19px;
+    border: 0px;
+    border-radius: 50px;
+    color: var(--highlightColor);
+    background-color: var(--backgroundColorContainer);
 }
 
 /* viewport > 900px */
