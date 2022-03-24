@@ -14,7 +14,9 @@
   <main>
     <div id="mainContainer">
       <div id="selectionContainer" class="contentContainer">
-        <img id="imgStar" src="./images/icon-star.svg" alt="star">
+        <div id="star">
+          <img id="imgStar" src="./images/icon-star.svg" alt="star">
+        </div>
         <h1>
           How did we do?
         </h1>
@@ -22,21 +24,12 @@
           Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
         </p>
         <form>
-          <div class="radioContainer">
-            <input class="radioButton" id=radio1 name=selection type=radio>
-            
-            <label class="labelRadio" for=radio1>1</label>
-            <input class="radioButton" id=radio2 name=selection type=radio><label class="labelRadio" for=radio2>2</label>
-            <input class="radioButton" id=radio3 name=selection type=radio><label class="labelRadio" for=radio2>3</label>
-            <input class="radioButton" id=radio4 name=selection type=radio><label class="labelRadio" for=radio2>4</label>
-            <input class="radioButton" id=radio5 name=selection type=radio><label class="labelRadio" for=radio2>5</label>
-          </div>
-          <div class="radioContainer">
-            <div class="radio"></div>
-            <div class="radio"></div>
-            <div class="radio"></div>
-            <div class="radio"></div>
-            <div class="radio"></div>
+          <div id="radioContainer">
+            <div class="radio">1</div>
+            <div class="radio">2</div>
+            <div class="radio">3</div>
+            <div class="radio">4</div>
+            <div class="radio">5</div>
           </div>
           <button id="buttonSubmit" type="button">
             Submit
@@ -46,7 +39,7 @@
       <div id="finalContainer" class="contentContainer">
         <img src="./images/illustration-thank-you.svg" alt="ThankYou">
         <p id="pStars">
-          You selected <!-- Add rating here --> out of 5 
+          You selected <span id="selectedRating">0</span> out of 5 
         </p>
         <h1>
           Thank you!  
