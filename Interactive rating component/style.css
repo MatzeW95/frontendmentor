@@ -6,6 +6,8 @@
     --fontColor: hsl(0, 0%, 100%);
     --backgroundColor: hsl(216, 12%, 8%);
     --backgroundColorContainer: hsl(213, 19%, 18%);
+    --highlightColor: hsl(25, 97%, 53%);
+    --textColor: hsl(216, 12%, 54%);
 }
 
 body {
@@ -25,7 +27,7 @@ body {
 }
 
 #mainContainer {
-    width: 40%;
+    width: 29%;
     margin: 10vh auto 0;
 }
 
@@ -34,18 +36,43 @@ body {
     display: flex;
     flex-direction: column;
 
-    background:radial-gradient(circle at 50% 0%, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 150%);
+    background: radial-gradient(circle at 50% 0%, hsl(213, 19%, 18%) 0%, hsl(216, 12%, 8%) 150%);
 
     border-radius: 25px;
     padding: 2rem;
     box-sizing: border-box;
 }
 
+.contentContainer > p {
+    color: var(--textColor);
+    line-height: 1.6;
+}
+
+#finalContainer {
+    display: none;
+}
+
 #imgStar {
     width: 2rem;
 }
 
-.radioContainer {
+#star {
+    border-radius: 50%;
+    background-color: var(--backgroundColorContainer);
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 0.2rem;
+}
+
+#radioContainer {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,21 +80,24 @@ body {
     align-items: center;
 }
 
-.labelRadio {
-    font-size: 15px;
-    margin: 1.3rem;
-    z-index: 10;
+.radio {
+    border-radius: 50%;
+    background-color: var(--backgroundColorContainer);
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-top: 5px;
 }
 
-.radio {
-    z-index: 1;
-    position: relative;
-    top: -3.5rem;
-    padding: 1.5rem;
-    margin: 0px;
-    font-size: 1px;
-    border-radius: 50px;
-    background-color: red;
+.radio:hover {
+    background-color: var(--highlightColor) !important;
+    color: var(--fontColor) !important;
 }
 
 /* viewport > 900px */
