@@ -33,7 +33,7 @@ buttonSubmit.addEventListener("click", function () {
         textRating.innerHTML = rating + 1;
 
         containerSelection.style.display = "none";
-        containerResult.style.display = "block";
+        containerResult.style.display = "flex";
     }
 });
 
