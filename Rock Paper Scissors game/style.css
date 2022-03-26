@@ -1,8 +1,32 @@
 /* font import */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 /* universal css */
+:root {
+    /* colors */
+    --colorWhite: #ffffff;
 
-/* state css */
+    /* background */
+    --backgroundMainGradient: radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 0%, rgba(20, 21, 57, 1) 100%);
+    
+    /* score */
+    --scoreHeading: hsl(229, 64%, 46%);
+    --scoreText: hsl(229, 25%, 31%);
+    --scoreOutline: hsl(217, 16%, 45%);
+
+    /* options */
+    --optionScissor: linear-gradient(0deg, rgba(236, 158, 14, 1) 0%, rgba(236, 169, 34, 1) 100%);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--backgroundMainGradient);
+}
 
 /* viewport > 900px */
 
