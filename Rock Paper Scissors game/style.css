@@ -15,7 +15,11 @@
     --scoreOutline: hsl(217, 16%, 45%);
 
     /* options */
-    --optionScissor: linear-gradient(0deg, rgba(236, 158, 14, 1) 0%, rgba(236, 169, 34, 1) 100%);
+    --optionScissor: linear-gradient(0deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+    --optionPaper: linear-gradient(0deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%);
+    --optionRock: linear-gradient(0deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
+    --optionLizard: linear-gradient(0deg, hsl(261, 73%, 60%) 0%, hsl(261, 72%, 63%) 100%);
+    --optionSpock: linear-gradient(0deg, hsl(189, 59%, 53%) 0%, hsl(189, 58%, 57%) 100%);
 }
 
 body {
