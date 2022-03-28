@@ -1,10 +1,11 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
 
 /* universal css */
 :root {
     /* colors */
     --colorWhite: #ffffff;
+    --colorGrayOut: rgba(0, 0, 0, 0.5);
 
     /* background */
     --backgroundMainGradient: radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 0%, rgba(20, 21, 57, 1) 100%);
@@ -30,8 +31,192 @@ body {
     height: 100vh;
 
     background: var(--backgroundMainGradient);
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    color: var(--colorWhite);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#containerScore {
+    width: 60vw;
+    margin: 2rem 0 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid var(--scoreOutline);
+    border-radius: 15px;
+}
+
+#imgLogo {
+    margin: 5px;
+    max-height: 99px;
+}
+
+#scoreBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid var(--colorWhite);
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    background-color: var(--colorWhite);
+}
+
+#scoreHeading {
+    color: var(--scoreHeading);
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#score {
+    color: var(--scoreText);
+    margin: 0px;
+    font-size: 3.5rem;
+}
+
+.containerGame {
+    width: 60vw;
+}
+
+#gameSelection {
+
+}
+
+.selectOption {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selectOption > div {
+    background-color: var(--colorWhite);
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.selectOption > div > img {
+    background-color: var(--colorWhite);
+}
+
+#selectPaper {
+    background-image: var(--optionPaper);
+}
+
+#selectScissor {
+    background-image: var(--optionScissor);
+}
+
+#selectRock {
+    background-image: var(--optionRock);
+}
+
+#selectLizard {
+    background-image: var(--optionLizard);
+}
+
+#selectSpock {
+    background-image: var(--optionSpock);
+}
+
+#gameResult {
+
+}
+
+#containerInfo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    margin: 0px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--scoreOutline);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--scoreOutline);
+}
+
+#rulesPopup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorGrayOut);
+    z-index: 2;
+}
+
+#rulesPopupContainer {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorWhite);
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#rulesHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem;
+}
+
+#rulesHeading > h2 {
+    color: var(--scoreText);
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+#imgClose {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#imgRules {
+    margin: 2rem 2rem 0;
+}
 /* viewport > 900px */
 
 /* viewport < 900px */
