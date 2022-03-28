@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
+<!--
   Score
   Rules
 
@@ -21,10 +21,63 @@
   You Lose
 
   Play Again
+
+-->
 </head>
 <body>
   <main>
-    
+    <div id="containerScore">
+      <img id="imgLogo" src="./images/logo.svg" alt="logo">
+      <div id="scoreBoard">
+        <h2 id="scoreHeading">score</h2>
+        <h1 id="score">0</h1>
+      </div>
+    </div>
+    <div class="containerGame" id="gameSelection">
+      <img id="imgChoose" src="./images/bg-triangle.svg" alt="background">
+
+      <div id="selectPaper" class="selectOption">
+        <div>
+          <img id="imgPaper" src="./images/icon-paper.svg" alt="paper">
+        </div>
+      </div>
+      <div id="selectScissor" class="selectOption">
+        <div>
+          <img id="imgScissor" src="./images/icon-scissors.svg" alt="scissor">
+        </div>
+      </div>
+      <div id="selectRock" class="selectOption">
+        <div>
+          <img id="imgRock" src="./images/icon-rock.svg" alt="rock">
+        </div>
+      </div>
+      <div id="selectLizard" class="selectOption">
+        <div>
+          <img id="imgLizard" src="./images/icon-lizard.svg" alt="lizard">
+        </div>
+      </div>
+      <div id="selectSpock" class="selectOption">
+        <div>
+          <img id="imgSpock" src="./images/icon-spock.svg" alt="spock">
+        </div>
+      </div>
+    </div>
+    <div class="containerGame" id="gameResult">
+
+    </div>
+    <div id="containerInfo">
+      <p id="mode" class="button">mode</p>
+      <p id="rules" class="button">rules</p>
+    </div>
+    <div id="rulesPopup">
+      <div id="rulesPopupContainer">
+        <div id="rulesHeading">
+          <h2>rules</h2>
+          <img id="imgClose" src="./images/icon-close.svg" alt="close">
+        </div>
+        <img id="imgRules" src="./images/image-rules.svg" alt="rules">
+      </div>
+    </div>
   </main>
   <!--
   <div class="attribution">
