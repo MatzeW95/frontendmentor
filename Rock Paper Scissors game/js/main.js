@@ -138,7 +138,82 @@ function checkWinCondition(userPick, computerPick) {
     }
     else {
         //bonus mode
-        
+
+        if (userPick == 0 && computerPick == 2) {
+            result = 1;
+        }
+        else if (userPick == 0 && computerPick == 4) {
+            result = 1;
+        }
+        else if (userPick == 1 && computerPick == 0) {
+            result = 1;
+        }
+        else if (userPick == 1 && computerPick == 3) {
+            result = 1;
+        }
+        else if (userPick == 2 && computerPick == 1) {
+            result = 1;
+        }
+        else if (userPick == 2 && computerPick == 3) {
+            result = 1;
+        }
+        else if (userPick == 3 && computerPick == 0) {
+            result = 1;
+        }
+        else if (userPick == 3 && computerPick == 4) {
+            result = 1;
+        }
+        else if (userPick == 4 && computerPick == 1) {
+            result = 1;
+        }
+        else if (userPick == 4 && computerPick == 2) {
+            result = 1;
+        }
+        else if (userPick == 2 && computerPick == 0) {
+            result = 2;
+        }
+        else if (userPick == 4 && computerPick == 0) {
+            result = 2;
+        }
+        else if (userPick == 0 && computerPick == 1) {
+            result = 2;
+        }
+        else if (userPick == 3 && computerPick == 1) {
+            result = 2;
+        }
+        else if (userPick == 1 && computerPick == 2) {
+            result = 2;
+        }
+        else if (userPick == 3 && computerPick == 2) {
+            result = 2;
+        }
+        else if (userPick == 0 && computerPick == 3) {
+            result = 2;
+        }
+        else if (userPick == 4 && computerPick == 3) {
+            result = 2;
+        }
+        else if (userPick == 1 && computerPick == 4) {
+            result = 2;
+        }
+        else if (userPick == 2 && computerPick == 4) {
+            result = 2;
+        }
+        else if (userPick == 0 && computerPick == 0) {
+            result = 3;
+        }
+        else if (userPick == 1 && computerPick == 1) {
+            result = 3;
+        }
+        else if (userPick == 2 && computerPick == 2) {
+            result = 3;
+        }
+        else if (userPick == 3 && computerPick == 3) {
+            result = 3;
+        }
+        else if (userPick == 4 && computerPick == 4) {
+            result = 3;
+        }
     }
 
     if (result != 0) {
