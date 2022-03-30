@@ -90,12 +90,26 @@ spock.addEventListener("click", function(){
 });
 
 function userSelection(userSelection) {
-    checkWinCondition(userSelection, computerPick());
+
+    var computerSelection = computerPick();
+    var result = checkWinCondition(userSelection, computerSelection);
+
+    hideSelectionUI();
+    showPick(userSelection, computerSelection);
 }
 
 function computerPick() {
 
-    return Math.floor(Math.random() * 5);
+    var com;
+
+    if (normalMode == true) {
+        com = Math.floor(Math.random() * 3);
+    }
+    else {
+        com = Math.floor(Math.random() * 5);
+    }
+
+    return com;
 }
 
 function checkWinCondition(userPick, computerPick) {
@@ -219,4 +233,79 @@ function checkWinCondition(userPick, computerPick) {
     if (result != 0) {
         return result;
     }
+}
+
+//Update UI
+var selectionUI = document.getElementById("gameSelection");
+var resultUI = document.getElementById("gameResult");
+
+var userPickUI = document.getElementById("finalUserPick");
+var userImg = document.getElementById("imgFinalUser");
+var comPickUI = document.getElementById("finalComPick");
+var comImg = document.getElementById("imgFinalCom");
+
+function hideSelectionUI() {
+    selectionUI.style.display = "none";
+}
+
+function showPick(user, com) {
+
+    switch (user) {
+        case 0:
+            userPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%)"; 
+            userImg.src = "./images/icon-paper.svg";       
+            break;
+        case 1:
+            //updated object user pick based on case
+            userPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)";
+            userImg.src = "./images/icon-scissors.svg";      
+            break;
+        case 2:
+            //updated object user pick based on case
+            userPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%)";
+            userImg.src = "./images/icon-rock.svg";     
+            break;
+        case 3:
+            //updated object user pick based on case
+            userPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(261, 73%, 60%) 0%, hsl(261, 72%, 63%) 100%)";
+            userImg.src = "./images/icon-lizard.svg";  
+            break;
+        case 4:
+            //updated object user pick based on case
+            userPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(189, 59%, 53%) 0%, hsl(189, 58%, 57%) 100%)";
+            userImg.src = "./images/icon-spock.svg";     
+            break;
+    }
+
+    switch (com) {
+        case 0:
+            //updated object com pick based on case
+            comPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%)";
+            comImg.src = "./images/icon-paper.svg";   
+            break;
+        case 1:
+            //updated object com pick based on case
+            comPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)";
+            comImg.src = "./images/icon-scissors.svg";       
+            break;
+        case 2:
+            //updated object com pick based on case
+            comPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%)";
+            comImg.src = "./images/icon-rock.svg";      
+            break;
+        case 3:
+            //updated object com pick based on case
+            comPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(261, 73%, 60%) 0%, hsl(261, 72%, 63%) 100%)";
+            comImg.src = "./images/icon-lizard.svg"; 
+            break;
+        case 4:
+            //updated object com pick based on case
+            comPickUI.style.backgroundImage = "linear-gradient(0deg, hsl(189, 59%, 53%) 0%, hsl(189, 58%, 57%) 100%)";
+            comImg.src = "./images/icon-spock.svg"; 
+            break;
+    }
+
+    //display object user and com pick
+    
+    resultUI.style.display = "block";
 }
