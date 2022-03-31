@@ -144,17 +144,18 @@ main {
 
 #gameResult {
     display: none;
+    width: 70%;
 }
 
 #finalContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .finalPick {
-    width: 10rem;
-    height: 10rem;
+    width: 16rem;
+    height: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,8 +164,8 @@ main {
 
 .finalPick > div {
     background-color: var(--colorWhite);
-    width: 8rem;
-    height: 8rem;
+    width: 13rem;
+    height: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +174,46 @@ main {
 
 .finalPick > div > img {
     background-color: var(--colorWhite);
+}
+
+#resultRingUser {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#resultRingCom {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.resultOuterRing {
+    z-index: -1;
+    width: 22rem;
+    height: 22rem;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultMiddleRing {
+    width: 18rem;
+    height: 18rem;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultInnerRing {
+    width: 14rem;
+    height: 14rem;
+    background-color: red;
+    border-radius: 50%;
 }
 
 #containerInfo {
