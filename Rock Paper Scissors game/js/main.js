@@ -96,6 +96,7 @@ function userSelection(userSelection) {
 
     hideSelectionUI();
     showPick(userSelection, computerSelection);
+    showWinner(result);
 }
 
 function computerPick() {
@@ -244,6 +245,10 @@ var userImg = document.getElementById("imgFinalUser");
 var comPickUI = document.getElementById("finalComPick");
 var comImg = document.getElementById("imgFinalCom");
 
+var outerRing = document.getElementsByClassName("resultOuterRing");
+var middleRing = document.getElementsByClassName("resultMiddleRing");
+var innerRing = document.getElementsByClassName("resultInnerRing");
+
 function hideSelectionUI() {
     selectionUI.style.display = "none";
 }
@@ -308,4 +313,37 @@ function showPick(user, com) {
     //display object user and com pick
     
     resultUI.style.display = "block";
+}
+
+function showWinner(result) {
+
+    //result: 1 user win, 2 computer win, 3 draw
+    
+    switch (result) {
+        case 1:
+            //only show user background
+            outerRing[0].style.visibility = "visible";
+            middleRing[0].style.visibility = "visible";
+            innerRing[0].style.visibility = "visible";
+
+            comPickUI.style.visibility = "visible";
+            break;
+        case 2:
+            //only show com background
+            outerRing[1].style.visibility = "visible";
+            middleRing[1].style.visibility = "visible";
+            innerRing[1].style.visibility = "visible";
+
+            userPickUI.style.visibility = "visible";
+            break;
+        case 3:
+            //show both background
+            outerRing[0].style.visibility = "visible";
+            middleRing[0].style.visibility = "visible";
+            innerRing[0].style.visibility = "visible";
+            outerRing[1].style.visibility = "visible";
+            middleRing[1].style.visibility = "visible";
+            innerRing[1].style.visibility = "visible";
+            break;
+    }
 }
