@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
   <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-<!--
+  <!--
   Score
   Rules
 
@@ -24,6 +25,7 @@
 
 -->
 </head>
+
 <body>
   <main>
     <div id="containerScore">
@@ -64,14 +66,26 @@
     </div>
     <div class="containerGame" id="gameResult">
       <div id="finalContainer">
-        <div id="finalUserPick" class="finalPick">
-          <div>
-            <img id="imgFinalUser" src="./images/icon-rock.svg" alt="user pick">
+        <div id="resultRingUser" class="resultOuterRing">
+          <div class="resultMiddleRing">
+            <div class="resultInnerRing">
+              <div id="finalUserPick" class="finalPick">
+                <div>
+                  <img id="imgFinalUser" src="./images/icon-rock.svg" alt="user pick">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="finalComPick" class="finalPick">
-          <div>
-            <img id="imgFinalCom" src="./images/icon-rock.svg" alt="computer pick">
+        <div id="resultRingCom" class="resultOuterRing">
+          <div class="resultMiddleRing">
+            <div class="resultInnerRing">
+              <div id="finalComPick" class="finalPick">
+                <div>
+                  <img id="imgFinalCom" src="./images/icon-rock.svg" alt="computer pick">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,4 +112,5 @@
   -->
   <script src="./js/main.js"></script>
 </body>
+
 </html>
