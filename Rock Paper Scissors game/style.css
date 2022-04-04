@@ -144,7 +144,7 @@ main {
 
 #gameResult {
     display: none;
-    width: 70%;
+    width: 80%;
 }
 
 #finalContainer {
@@ -177,43 +177,44 @@ main {
 }
 
 #resultRingUser {
-    position: relative;
-    top: 0px;
-    left: 0px;
+ 
 }
 
 #resultRingCom {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    
 }
 
 .resultOuterRing {
-    z-index: -1;
-    width: 22rem;
-    height: 22rem;
+    width: 28rem;
+    height: 28rem;
     background-color: green;
     border-radius: 50%;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .resultMiddleRing {
-    width: 18rem;
-    height: 18rem;
+    width: 24rem;
+    height: 24rem;
     background-color: yellow;
     border-radius: 50%;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .resultInnerRing {
-    width: 14rem;
-    height: 14rem;
+    width: 20rem;
+    height: 20rem;
     background-color: red;
     border-radius: 50%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #containerInfo {
