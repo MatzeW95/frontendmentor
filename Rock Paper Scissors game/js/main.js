@@ -309,8 +309,6 @@ function showPick(user, com) {
             comImg.src = "./images/icon-spock.svg"; 
             break;
     }
-
-    //display object user and com pick
     
     resultUI.style.display = "block";
 }
