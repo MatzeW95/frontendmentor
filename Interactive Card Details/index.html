@@ -5,32 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
 <body>
-
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
+  <main>
+    <div id="detailsMain">
+      <div id="detailsLeft">
+        <div id="cardFrontContainer">
+          <img id="cardFront" src="./images/bg-card-front.png" alt="card front">
+          <img id="cardLogo" src="./images/card-logo.svg" alt="card logo">
+        </div>
+        <div id="cardBackContainer">
+          <img id="cardBack" src="./images/bg-card-back.png" alt="card back">
+        </div>
+      </div>
+      <div id="detailsRight">
+        <form>
+          <label for="formName">CARDHODLER NAME</label>
+          <input type="text" name="formName" id="formName" placeholder="e.g. Jane Appleseed">
+          <label for="formNumber">CARD NUMBER</label>
+          <input type="number" name="formNumber" id="formNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <div>
+            <label for="formDateM">EXP. DATE (MM/YY)</label>
+            <input type="number" name="formDateM" id="formDateM" placeholder="MM">
+            <input type="number" id="formDateY" placeholder="YY">
+            <label for="formCvc">CVC</label>
+            <input type="number" name="formCvc" id="formCvc" placeholder="e.g. 123">
+            <button id="formConfirm" type="button">
+              Confirm
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
   <!-- Completed state start -->
 
   Thank you!
@@ -41,5 +50,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>-->
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
