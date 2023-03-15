@@ -1,25 +1,71 @@
-/* 
-
-Table of content
-
--   (17)    font import
-
--   (19)    universal css
-
--   (21)    state css
-
--   (23)    viewport > 900px
-
--   (25)    viewport < 900px
-
-*/
-
 /* font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 /* universal css */
 
+:root {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#detailsMain {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#detailsLeft {
+    
+    width: 50%;
+}
+
+#cardFrontContainer {
+    position: relative;
+    float: right;
+    margin-right: 8rem;
+}
+
+#cardBackContainer {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+#cardFront, #cardBack {
+    width: 25rem;
+}
+
+#cardLogo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: auto;
+    max-width: 4.5rem;
+}
+
+#detailsRight {
+    width: 50%;
+}
+
+form > label, input {
+    display: block;
+}
+
 /* state css */
 
-/* viewport > 900px */
+/* viewport > 1060px */
+body {
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 33% 100vh;
+}
 
-/* viewport < 900px */
+/* viewport < 1060px */
