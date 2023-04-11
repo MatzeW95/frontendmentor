@@ -2,7 +2,7 @@
 
 Frontend Mentor ist eine Online-Plattform, die Frontend-Coding-Herausforderungen anbietet. Benutzer können ihre Fähigkeiten im Frontend verbessern, indem sie echte Projekte lösen und an professionellen Designs arbeiten.
 
-Durch klicken auf das Projektbild gelangen Sie zu den Live Seiten.
+*Durch klicken auf das Projektbild gelangen Sie zu den Live Seiten.*
 
 ### 3-column preview card component
 <a href="https://matzew95.github.io/frontendmentor/3-column%20preview%20card%20component" target="_blank" rel="noopener">
