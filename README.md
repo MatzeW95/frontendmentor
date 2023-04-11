@@ -50,9 +50,7 @@ Durch klicken auf die Projektnamen gelangen Sie zu den Live Seiten.
 #### 3-column preview card component
 
 <a href="https://matzew95.github.io/frontendmentor/3-column%20preview%20card%20component" target="_blank" rel="noopener">
-
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/bc1e860e28b79a4c3007b2a04dcf32453b77eb0f2736676c.png)
-
+  <img src="https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/bc1e860e28b79a4c3007b2a04dcf32453b77eb0f2736676c.png" width="50%">
 </a>
 
 https://matzew95.github.io/frontendmentor/3-column%20preview%20card%20component
