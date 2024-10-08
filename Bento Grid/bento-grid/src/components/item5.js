@@ -1,11 +1,12 @@
-import Img from "../img/illustration-grow-followers.webp";
+import Img2 from "../img/illustration-audience-growth.webp";
 
 const item5 = () => {
 
     return(
         <div className="GridItem" id="Grid5">
-            <img src={Img} alt="Description of image" />
-            <h2>Grow followers with non-stop content.</h2>
+            <h1>>56%</h1>
+            <p>faster audience growth</p>
+            <img src={Img2} alt="Description of image" />
         </div>
     );
 };

@@ -6,14 +6,15 @@ import Item4 from './components/item4';
 import Item5 from './components/item5';
 import Item6 from './components/item6';
 import Item7 from './components/item7';
+import Item8 from './components/item8';
 
 function App() {
   return (
     <div className="App">
       <div className="GridMain">
         <div className="GridLeft">
-          <Item6/>
           <Item7/>
+          <Item8/>
         </div>
         <div className="GridRight">
           <Item1/>
@@ -21,6 +22,7 @@ function App() {
           <Item3/>
           <Item4/>
           <Item5/>
+          <Item6/>
         </div>
       </div>
     </div>
