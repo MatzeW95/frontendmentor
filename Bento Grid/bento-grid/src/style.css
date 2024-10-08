@@ -26,8 +26,8 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: var(--gap);
-    width: 80vw;
-    margin: 5rem 10vw;
+    width: 60vw;
+    margin: 5rem 20vw;
 }
 
 .GridLeft {
@@ -86,6 +86,7 @@ body {
 
 .GridItem {
     border-radius: 10px;
+    padding: 1rem;
 }
 
 .GridItem > img {
